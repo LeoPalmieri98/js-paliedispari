@@ -13,9 +13,28 @@ if (isNaN(numeroUtente)) {
 }
 
 // Generiamo numero casuale del computer
-let numeroComputer = Math.floor(Math.random() * 5)
+let numeroComputer = Math.floor(Math.random() * 5 + 1)
 console.log("Il computer ha scelto:", numeroComputer);
 
 // Sommiamo i due numeri
 let somma = numeroUtente + numeroComputer;
 console.log("La somma dei numeri è:", somma);
+
+// Determiniamo se la somma è pari o dispari
+function pariODispari(numero) {
+    if (numero % 2 === 0) {
+        return "pari";
+    } else {
+        return "dispari";
+    }
+}
+
+let risultato = pariODispari(somma);
+console.log("La somma è:", risultato);
+
+// Dichiariamo chi ha vinto
+if (sceltaUtente === risultato) {
+    console.log("Hai vinto!");
+} else {
+    console.log("Hai perso!");
+}
