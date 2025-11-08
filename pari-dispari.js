@@ -13,7 +13,7 @@ if (isNaN(numeroUtente)) {
 }
 
 // Generiamo numero casuale del computer
-let numeroComputer = Math.floor(Math.random() * 5 + 1)
+let numeroComputer = Math.floor(Math.random() * 4 ) + 1
 console.log("Il computer ha scelto:", numeroComputer);
 
 // Sommiamo i due numeri
